@@ -1,6 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const User=require('../models/User');
+const fetchuser=require('../middleware/fetchuser')
 const{body,validationResult}=require('express-validator');
  const bcrypt=require("bcryptjs");
 const { JsonWebTokenError } = require('jsonwebtoken');
@@ -82,10 +83,11 @@ router.post('/login',[
     }
 });
 //Route(3):Get loggedin User Details using:POST"/api/auth/getuser". login required
-router.post('/getuser', async (req,res)=>{
+router.post('/getuser',fetchuser, async (req,res)=>{
 try {
-    userId="todo";
+    userId=req.user.id;
     const user=await User.findById(userId).select("-password");
+    res.send(user);
 } catch (error) { 
     console.error(error.message);
     res.status(500).send("internal server error ");
