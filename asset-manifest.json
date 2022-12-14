@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amitkk07/My-Notebook.git/static/css/main.598a6723.css",
+    "main.js": "/amitkk07/My-Notebook.git/static/js/main.265cc84c.js",
+    "static/js/787.b5e72c4f.chunk.js": "/amitkk07/My-Notebook.git/static/js/787.b5e72c4f.chunk.js",
+    "index.html": "/amitkk07/My-Notebook.git/index.html",
+    "main.598a6723.css.map": "/amitkk07/My-Notebook.git/static/css/main.598a6723.css.map",
+    "main.265cc84c.js.map": "/amitkk07/My-Notebook.git/static/js/main.265cc84c.js.map",
+    "787.b5e72c4f.chunk.js.map": "/amitkk07/My-Notebook.git/static/js/787.b5e72c4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.598a6723.css",
+    "static/js/main.265cc84c.js"
+  ]
+}
